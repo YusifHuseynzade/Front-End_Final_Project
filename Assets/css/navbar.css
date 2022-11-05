@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 8%;
+  margin-right: 8%;
+  align-items: center;
+  padding: 2px 0;
+}
+.navbar img {
+  width: 220px;
+}
+.navbar i {
+  font-size: 26px;
+  vertical-align: middle;
+}
+.navbar .cart {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  color: #1b1b1b;
+  text-transform: uppercase;
+}
+.navbar__menu .second__menu {
+  position: absolute;
+  opacity: 0;
+  overflow: auto;
+  top: 100%;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
+  left: -1.6rem;
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.1s;
+}
+.navbar__menu .second__menu__item {
+  display: block;
+  width: 210px;
+  height: auto;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.navbar__menu .second__menu__item a {
+  display: block;
+  margin: 0;
+  padding: 8px 26px;
+  color: #737373;
+  font-size: 13px;
+  line-height: 19px;
+}
+.navbar__menu__dropdown {
+  position: relative;
+  display: flex;
+  display: inline;
+  text-transform: uppercase;
+  margin-right: 2.5rem;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  padding: 4rem 0;
+}
+.navbar__menu__dropdown a {
+  text-decoration: none;
+  color: #1b1b1b;
+}
+.navbar__menu .second__menu__shop {
+  position: absolute;
+  opacity: 0;
+  overflow: auto;
+  top: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
+  right: -27rem;
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.1s;
+}
+.navbar__menu .second__menu__shop__items {
+  display: inline-block;
+  font-family: "Playfair Display", serif;
+}
+
+.navbar__menu__dropdown:hover .second__menu {
+  opacity: 1;
+  z-index: 2;
+}
+
+.navbar__menu__dropdown:hover .second__menu__shop {
+  opacity: 1;
+}
+
+.bottom__line {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}
+
+.bottom__line::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #000;
+  transition: width 0.3s;
+}
+
+.bottom__line:hover::after {
+  width: 100%;
+}/*# sourceMappingURL=navbar.css.map */
