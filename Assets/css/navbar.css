@@ -67,7 +67,7 @@ body {
   font-weight: 500;
   line-height: 22px;
   letter-spacing: 0.1em;
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 .navbar__menu__dropdown a {
   text-decoration: none;
@@ -85,17 +85,11 @@ body {
   right: -27rem;
   transition: 0.5s ease-in-out;
   transition-delay: 0.1s;
-  max-height: 300px;
-  vertical-align: middle;
 }
 .navbar__menu .second__menu__shop__items {
   display: inline-block;
   font-family: "Playfair Display", serif;
-  padding: 0 0 24px;
   font-size: 22px;
-  text-transform: none;
-  line-height: 1.1em;
-  color: #1b1b1b;
 }
 .navbar__menu .second__menu__shop__items .shop__pages {
   display: block;

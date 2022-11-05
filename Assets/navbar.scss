@@ -67,7 +67,7 @@
         font-weight: 500;
         line-height: 22px;
         letter-spacing: 0.1em;
-        padding: 2rem 0;
+        padding: 4rem 0;
         
         a {
           text-decoration: none;
@@ -86,17 +86,11 @@
         right: -27rem;
         transition: 0.5s ease-in-out;
         transition-delay: 0.1s;
-        max-height: 300px;
-        vertical-align: middle;
+        
         &__items{
           display: inline-block;
           font-family: 'Playfair Display', serif;
-          padding: 0 0 24px;
-          font-size: 22px;
-          text-transform: none;
-          line-height: 1.1em;
-          color: #1b1b1b;
-          
+          font-size:22px ;
           .shop__pages{
             display: block;
             margin: 0;
