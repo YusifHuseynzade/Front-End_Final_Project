@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.col__width__1 {
+    flex: 0 0 auto;
+    width: 8.33%;
+  }
+.col__width__2 {
+    flex: 0 0 auto;
+    width: 16.67%;
+  }
+  .col__width__3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .col__width__4 {
+    flex: 0 0 auto;
+    width: 33.33%;
+  }
+  .col__width__5 {
+    flex: 0 0 auto;
+    width: 41.67%;
+  }
+  .col__width__6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .col__width__7 {
+    flex: 0 0 auto;
+    width: 58.33%;
+  }
+  .col__width__8 {
+    flex: 0 0 auto;
+    width: 66.67%;
+  }
+  .col__width__9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+  .col__width__10 {
+    flex: 0 0 auto;
+    width: 83.33%;
+  }
+  .col__width__11 {
+    flex: 0 0 auto;
+    width: 91.67%;
+  }
+  .col__width__12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .marg__left__right {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .justify__content__start {
+    justify-content: flex-start;
+  }
+  
+  .justify__content__end {
+    justify-content: flex-end;
+  }
+  
+  .justify__content__center {
+    justify-content: center;
+  }
+  
+  .justify__content__between {
+    justify-content: space-between;
+  }
+  
+  .justify__content__around {
+    justify-content: space-around;
+  }
+  
+  .justify__content__evenly {
+    justify-content: space-evenly;
+  }
+  
+  .align__items__start {
+    align-items: flex-start;
+  }
+  
+  .align__items__end {
+    align-items: flex-end;
+  }
+  
+  .align__items__center {
+    align-items: center;
+  }
+
+  .align__content__start {
+    align-content: flex-start;
+  }
+  
+  .align__content__end {
+    align-content: flex-end;
+  }
+  
+  .align__content__center {
+    align-content: center;
+  }
+  
