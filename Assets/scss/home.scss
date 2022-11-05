@@ -1,0 +1,15 @@
+@import "./_extencions.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .section {
+    background-color: rgb(215, 215, 215);
+    
+  }
