@@ -67,11 +67,14 @@
         font-weight: 500;
         line-height: 22px;
         letter-spacing: 0.1em;
-        padding: 4rem 0;
+        padding: 2rem 0;
         
         a {
           text-decoration: none;
           color: #1b1b1b;
+          span{
+            color: #737373;
+          }
         }
       }
       .second__menu__shop{
@@ -86,20 +89,30 @@
         right: -27rem;
         transition: 0.5s ease-in-out;
         transition-delay: 0.1s;
-        
+        padding-left: 2rem;
+        padding-right: 2rem;
         &__items{
           display: inline-block;
           font-family: 'Playfair Display', serif;
-          font-size:22px ;
+          font-size: 22px;
+          text-transform: none;
+          line-height: 1.1em;
+          color: #1b1b1b;
+          height: 400.188px;
           .shop__pages{
             display: block;
-            margin: 0;
-            padding: 8px 26px;
             color: #737373;
             font-size: 13px;
             line-height: 19px;
             display: inline;
             font-family: "Montserrat", sans-serif;
+            margin-bottom: 1rem;
+            
+            &__lists{
+              padding: 8px 0;
+              display: block;
+              
+            }
           }
         }
       }
