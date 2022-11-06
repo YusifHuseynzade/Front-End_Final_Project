@@ -265,6 +265,15 @@
   position: absolute;
 }
 
+.position__fixed {
+  position: fixed;
+}
+
+.position__sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
 * {
   margin: 0;
   padding: 0;
