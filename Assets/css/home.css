@@ -121,12 +121,16 @@
   display: flex;
 }
 
+.margin__bt__05 {
+  margin-bottom: 0.5rem;
+}
+
 .margin__bt__1 {
   margin-bottom: 1rem;
 }
 
 .margin__bt__2 {
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
 }
 
 .margin__bt__3 {
@@ -141,12 +145,16 @@
   margin-bottom: 4rem;
 }
 
+.margin__tp__05 {
+  margin-top: 0.5rem;
+}
+
 .margin__tp__1 {
   margin-top: 1rem;
 }
 
 .margin__tp__2 {
-  margin-top: 2rem;
+  margin-top: 1.75rem;
 }
 
 .margin__tp__3 {
@@ -265,6 +273,43 @@
   position: absolute;
 }
 
+.padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.text__center {
+  text-align: center;
+}
+
+.font__sz__1 {
+  font-size: 1rem;
+}
+
+.font__sz__2 {
+  font-size: 1.25rem;
+}
+
+.font__sz__3 {
+  font-size: 1.5rem;
+}
+
+.font__sz__4 {
+  font-size: 1.75rem;
+}
+
+.font__sz__5 {
+  font-size: 2rem;
+}
+
+.font__sz__6 {
+  font-size: 2.5rem;
+}
+
+.flex__wrap {
+  flex-wrap: wrap;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -278,10 +323,6 @@ body {
 
 .valentine {
   background-color: rgb(240, 240, 240);
-}
-.valentine .padding {
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 .valentine__image {
   background-repeat: no-repeat;
@@ -311,4 +352,90 @@ body {
 }
 .valentine .la-play {
   font-size: 40px;
+}
+
+.flowers__experts .font__size {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 38px;
+}
+.flowers__experts__h5__size {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.subscribe {
+  background-image: url(/Images/home_images/h3-background-img.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: -130%;
+}
+.subscribe__padding {
+  padding-top: 185px;
+  padding-bottom: 185px;
+}
+.subscribe .input__group {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: stretch;
+  width: 100%;
+}
+.subscribe .form {
+  width: 35%;
+  padding: 22px 11px;
+  border: none;
+}
+.subscribe .btn-subscribe {
+  width: 12%;
+  border: none;
+  background-color: #f34f3f;
+  transition: 0.3s;
+}
+.subscribe .btn-subscribe:hover {
+  background-color: #da4538;
+}
+.subscribe .h2__font-size {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.blog {
+  background-color: rgb(240, 240, 240);
+}
+.blog h2, .blog h5 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+.blog__padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.blog__img__size {
+  width: 95%;
+}
+.blog__date {
+  border: none;
+  background-color: white;
+  padding: 8px 16px;
+  top: 3%;
+  left: 2.5%;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.blog__date:hover {
+  color: #da4538;
+}
+.blog__img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height: 270px;
+  transition: 0.6s;
+}
+.blog__img:hover {
+  background-size: 110%;
 }/*# sourceMappingURL=home.css.map */
