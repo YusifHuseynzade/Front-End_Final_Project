@@ -106,11 +106,14 @@
   .d_flex {
     display: flex;
   }
+  .margin__bt__05 {
+    margin-bottom: 0.5rem;
+  }
   .margin__bt__1 {
     margin-bottom: 1rem;
   }
   .margin__bt__2 {
-    margin-bottom: 2rem;
+    margin-bottom: 1.75rem;
   }
   .margin__bt__3 {
     margin-bottom: 2.5rem;
@@ -121,11 +124,14 @@
   .margin__bt__5 {
     margin-bottom: 4rem;
   }
+  .margin__tp__05 {
+    margin-top: 0.5rem;
+  }
   .margin__tp__1 {
     margin-top: 1rem;
   }
   .margin__tp__2 {
-    margin-top: 2rem;
+    margin-top: 1.75rem;
   }
   .margin__tp__3 {
     margin-top: 2.5rem;
@@ -214,4 +220,33 @@
   .position__absolute {
     position: absolute;
   }
+  .padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .text__center {
+    text-align: center;
+  }
+  .font__sz__1 {
+    font-size: 1rem;
+  }
+  .font__sz__2 {
+    font-size: 1.25rem;
+  }
+  .font__sz__3 {
+    font-size: 1.5rem;
+  }
+  .font__sz__4 {
+    font-size: 1.75rem;
+  }
+  .font__sz__5 {
+    font-size: 2rem;
+  }
+  .font__sz__6 {
+    font-size: 2.5rem;
+  }
+  .flex__wrap {
+    flex-wrap: wrap;
+  }
+  
   
