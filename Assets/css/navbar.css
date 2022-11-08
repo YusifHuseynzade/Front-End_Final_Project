@@ -113,6 +113,13 @@ body {
   padding: 8px 0;
   display: block;
 }
+.navbar .right__side__items {
+  display: block;
+  width: 210px;
+  height: auto;
+  text-transform: capitalize;
+  font-weight: 500;
+}
 
 .navbar__menu__dropdown:hover .second__menu {
   opacity: 1;

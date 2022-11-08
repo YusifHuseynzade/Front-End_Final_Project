@@ -54,6 +54,7 @@
             font-size: 13px;
             line-height: 19px;
           }
+         
         }
         
       }
@@ -116,9 +117,21 @@
           }
         }
       }
-          
+     
+    }
+    .right__side{
+     
+      &__items{
+        
+        display: block;
+          width: 210px;
+          height: auto;
+          text-transform: capitalize;
+          font-weight: 500;
+      }
     }
   }
+
   .navbar__menu__dropdown:hover .second__menu {
     opacity: 1;
     z-index: 2;
