@@ -1,5 +1,5 @@
 /*7.SECTION*/
-@import "./_extensions.scss";
+@import "./home_extensions.scss";
 @import "./variables.scss";
 @import "./home_mixin.scss";
 
@@ -102,4 +102,5 @@
       from {opacity: 0.8;} 
       to {opacity: 1;}
   }
+ 
 }

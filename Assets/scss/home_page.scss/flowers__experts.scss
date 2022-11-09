@@ -1,5 +1,5 @@
 /*4.SECTION*/
-@import "./_extensions.scss";
+@import "./home_extensions.scss";
 @import "./variables.scss";
 @import "./home_mixin.scss";
 
@@ -25,4 +25,31 @@
       font-weight: 500;
       font-size: 13px;
     }
+    @media (max-width:576px) {
+        
+      .resp {
+        width: 50%;
+        flex-direction: column;
+      }
+    }
+    @media (min-width:576px) and (max-width:768px)  {
+      .resp {
+        width: 50%;
+        flex-direction: column;
+      }
+    }
+    @media (min-width:768px) and (max-width:992px)  {
+      .resp {
+        width: 33.33%;
+        flex-direction: column;
+        margin-top: 1rem;
+      }
+    }
+    @media (min-width:992px) and (max-width:1200px)  {
+      .resp {
+        width: 25%;
+        flex-direction: column;
+      }
+    }
+    
   }

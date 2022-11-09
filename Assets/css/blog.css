@@ -358,4 +358,34 @@ body {
 }
 .blog__img:hover {
   background-size: 110%;
+}
+@media (max-width: 576px) {
+  .blog .blog {
+    height: 100%;
+  }
+  .blog .blog_resp {
+    display: flow-root;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .blog .blog_resp {
+    display: flow-root;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .blog .blog_resp {
+    width: 33.33%;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .blog .blog_resp {
+    width: 33.3%;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=blog.css.map */
