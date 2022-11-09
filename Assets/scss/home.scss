@@ -1,0 +1,139 @@
+@import "./_extensions.scss";
+@import './about.scss';
+@import './faq.scss';
+@import './contact.scss';
+@import './portfolio.scss';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .valentine {
+    background-color: rgb(240, 240, 240);
+
+    &__image {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      transition: 0.6s;
+      &:hover {
+        background-size: 110%;
+      }
+    }
+   
+    &__icon__size-color {
+      font-size: 18px;
+      color: red;
+    }
+   
+    &__font__size {
+      font-family: "Playfair Display",serif;
+      font-weight: 400;
+      font-size: 38px;
+    }
+    
+    .video__button {
+      width: 95px;
+      height: 95px;
+      border-radius: 50%;
+      border: none;
+      top:35%;
+      left:42%;
+    }
+    
+    .la-play {
+      font-size: 40px;
+    }
+  }
+
+  .flowers__experts {
+    .font__size {
+      font-family: "Playfair Display",serif;
+      font-weight: 400;
+      font-size: 38px;
+    }
+    &__h5__size {
+      font-family: Montserrat;
+      font-weight: 500;
+      font-size: 13px;
+    }
+  }
+
+  .subscribe {
+    background-image: url(/Images/home_images/h3-background-img.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y:-130%;
+    &__padding {
+      padding-top: 185px;
+      padding-bottom: 185px;
+    }
+    .input__group {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      align-items: stretch;
+      width: 100%;
+    }
+    .form {
+      width: 35%;
+      padding: 22px 11px;
+      border: none;
+    }
+    .btn-subscribe {
+      width: 12%;
+      border: none;
+      background-color: #f34f3f;
+      transition: 0.3s;
+      &:hover {
+        background-color: #da4538;
+      }
+    }
+    .h2__font-size {
+      font-family: "Playfair Display",serif;
+      font-weight: 400;
+      font-size: 30px;
+    }
+  }
+
+  .blog {
+    background-color: rgb(240, 240, 240);
+    h2, h5 {
+      font-family: "Playfair Display",serif;
+      font-weight: 400;
+    }
+    &__padding {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    &__img__size {
+      width: 95%;
+    }
+    &__date {
+      border: none;
+      background-color: white;
+      padding: 8px 16px;
+      top:3%;
+      left:2.5%;
+      cursor: pointer;
+      transition: 0.4s;
+      &:hover {
+        color: #da4538;
+      }
+    }
+    &__img {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      height: 270px;
+      transition: 0.6s;
+      &:hover {
+        background-size: 110%;
+      }
+    }
+  }
