@@ -1,4 +1,5 @@
-{let slideIndex = 1;
+{
+let slideIndex = 1;
 slideShow(slideIndex);
 
 function plusSlides(n) {
@@ -30,7 +31,8 @@ function slideShow(n) {
 }
 
 
-{let slideIndex = 1;
+{
+let slideIndex = 1;
 slideShow(slideIndex);
 
 function nextSlides(n) {
@@ -60,3 +62,54 @@ function slideShow(n) {
   setTimeout(slideShow, 2000);
 }
 }
+
+
+{
+let iframe = document.querySelector(".iframe__video");
+let stopButton = document.querySelector(".stop__button");
+let image = document.getElementById("image");
+
+function startVideo() {
+  image.style.display = "none";
+  iframe.style.display = "block";
+  stopButton.style.display = "block";
+}
+function stopVideo() {
+  stopButton.style.display = "none";
+  image.style.display = "block";
+  iframe.style.display = "none";
+  iframe.src = iframe.src;
+}
+}
+
+
+{
+let addButton = document.getElementById('button-add');
+let input = document.querySelector('.form');
+
+
+
+addButton.addEventListener('click' , () => {
+
+  let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+  if (input.value.match(validRegex)) {
+    let messagetrue = document.querySelector('.messagetrue');
+    messagetrue.innerHTML = `<div class="position__relative">
+    <p class="position__absolute messagetrue">Thank you for your message. It has been sent.</p>
+    </div>`
+    input.value = ""; 
+  }
+  else {
+    let messagefalse = document.querySelector('.messagefalse');
+    messagefalse.innerHTML = `<div class="position__relative">
+    <p class="position__absolute messagefalse">One or more fields have an error. Please check and try again.(Example: YusifHuseynzade@gmail.com)</p>
+    </div>`
+    return false;
+  }
+}
+)}
+
+
+
+
