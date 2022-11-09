@@ -184,8 +184,14 @@
   .w-70{
     width: 70%;
   }
+  .w-65{
+    width: 65%;
+  }
   .w-60{
     width: 60%;
+  }
+  .w-55{
+    width: 55%;
   }
   .w-50{
     width: 50%;
@@ -220,4 +226,40 @@
   .position__absolute {
     position: absolute;
   }
+  .padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .text__center {
+    text-align: center;
+  }
+
+  .font__sz__1 {
+    font-size: 1rem;
+  }
+  .font__sz__2 {
+    font-size: 1.25rem;
+  }
+  .font__sz__3 {
+    font-size: 1.5rem;
+  }
+  .font__sz__4 {
+    font-size: 1.75rem;
+  }
+  .font__sz__5 {
+    font-size: 2rem;
+  }
+  .font__sz__6 {
+    font-size: 2.5rem;
+  }
+  .font__sz__7 {
+    font-size: 2.75rem;
+  }
+  .font__sz__8 {
+    font-size: 3rem;
+  }
+  .flex__wrap {
+    flex-wrap: wrap;
+  }
+  
   
