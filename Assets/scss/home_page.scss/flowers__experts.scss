@@ -1,0 +1,55 @@
+/*4.SECTION*/
+@import "./home_extensions.scss";
+@import "./variables.scss";
+@import "./home_mixin.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+  }
+  body {
+    font-size: 16px;
+    font-family: $montserrat;
+  }
+
+.flowers__experts {
+    .font__size {
+      font-family: $playfair__display;
+      font-weight: 400;
+      font-size: 38px;
+    }
+    &__h5__size {
+      font-family: $montserrat;
+      font-weight: 500;
+      font-size: 13px;
+    }
+    @media (max-width:576px) {
+        
+      .resp {
+        width: 50%;
+        flex-direction: column;
+      }
+    }
+    @media (min-width:576px) and (max-width:768px)  {
+      .resp {
+        width: 50%;
+        flex-direction: column;
+      }
+    }
+    @media (min-width:768px) and (max-width:992px)  {
+      .resp {
+        width: 33.33%;
+        flex-direction: column;
+        margin-top: 1rem;
+      }
+    }
+    @media (min-width:992px) and (max-width:1200px)  {
+      .resp {
+        width: 25%;
+        flex-direction: column;
+      }
+    }
+    
+  }

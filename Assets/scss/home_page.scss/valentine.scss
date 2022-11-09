@@ -1,0 +1,110 @@
+ /*3.SECTION*/
+ @import "./home_extensions.scss";
+ @import "./variables.scss";
+ @import "./home_mixin.scss";
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+  }
+  body {
+    font-size: 16px;
+    font-family: $montserrat;
+  }
+
+ .valentine {
+    background-color: rgb(240, 240, 240);
+
+    &__image {
+      transition: 0.5s;
+      background-size: 105%;
+      background-repeat: no-repeat;
+      background-position: center;
+      &:hover {
+        background-size: 112%;
+      }
+    }
+   
+    &__icon__size-color {
+      font-size: 18px;
+      color: red;
+    }
+   
+    &__font__size {
+      font-family: $playfair__display;
+      font-weight: 400;
+      font-size: 38px;
+    }
+    
+    .video__button {
+      width: 95px;
+      height: 95px;
+      border-radius: 50%;
+      border: none;
+      top:35%;
+      left:42%;
+      display: block;
+      transition: 0.3s;
+    }
+    .active, .video__button:hover {
+      cursor: pointer;
+      scale: 105%;
+    }
+    .active .iframe__video {
+      display: block;
+  }
+    .active .video__button {
+      display: none;
+    }
+    .la-play {
+      font-size: 40px;
+    }
+    .iframe__video {
+      width: 100%;
+      height: 100%;
+      display: none;
+    }
+    .stop__button {
+    margin-top: 5px;
+    margin-left: 200px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgb(220, 72, 72);
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    font-family: $montserrat;
+    border: none;
+    padding: 5px 10px;
+    display: none;
+   }
+   .active, .stop__button:hover {
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+    scale: 105%;
+    .la-undo-alt {
+      transition: 1.2s;
+      rotate: 360deg;
+  }
+}
+  .active .stop__button {
+    display: block;
+  } 
+  .la-undo-alt {
+    transition: 1.2s;
+  }
+  @media (max-width:576px) {
+    
+    .div2 {
+      width: 100%;
+      flex-direction: column;
+    }
+    &__font__size {
+      font-size: 18px;
+    }
+    .p__size {
+      font-size: 12px;
+    }
+}
+}
