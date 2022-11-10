@@ -95,10 +95,9 @@
     transition: 1.2s;
   }
   @media (max-width:576px) {
-    
     .div2 {
       width: 100%;
-      flex-direction: column;
+      display: block;
     }
     &__font__size {
       font-size: 18px;

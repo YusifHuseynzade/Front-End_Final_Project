@@ -1,4 +1,4 @@
-/*4.SECTION*/
+/*2.SECTION*/
 * {
   margin: 0;
   padding: 0;
@@ -323,42 +323,193 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.flowers__experts .font__size {
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
-  font-size: 38px;
+.all {
+  padding-top: 55px;
+  padding-bottom: 55px;
 }
-.flowers__experts__h5__size {
+.all__list__type__none {
+  list-style-type: none;
+}
+.all__button__decor {
+  border: none;
+  background-color: white;
+  cursor: pointer;
   font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.all__button__decor:hover {
+  color: #e92e1d;
+}
+.all .filter__menu .second__menu {
+  opacity: 0;
+  overflow: auto;
+  top: 100%;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
+  left: -1.6rem;
+}
+.all .filter__menu .second__menu .second__menu__item {
+  display: block;
+  width: 210px;
+  height: auto;
+  text-transform: capitalize;
   font-weight: 500;
+}
+.all .filter__menu .second__menu .second__menu__item a {
+  display: block;
+  margin: 0;
+  padding: 8px 26px;
+  color: #737373;
   font-size: 13px;
+  line-height: 19px;
+}
+.all .filter__menu__dropdown {
+  position: relative;
+  display: flex;
+  display: inline;
+  text-transform: uppercase;
+  margin-right: 2.5rem;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  padding: 2rem 0;
+}
+.all .filter__menu__dropdown a {
+  text-decoration: none;
+}
+.all .filter__menu__dropdown a span {
+  color: #737373;
+}
+.all .filter__menu .filter__icon {
+  transition: 0.3s;
+  color: black;
+}
+.all .filter__menu .filter__icon:hover {
+  rotate: 180deg;
+}
+.all .filter__menu .second__menu__filter {
+  background-color: white;
+  position: absolute;
+  opacity: 0;
+  overflow: auto;
+  top: 75%;
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+  right: -7rem;
+  transition: 0.25s ease-in-out;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.all .filter__menu .second__menu__filter__items {
+  display: inline-block;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  text-transform: none;
+  line-height: 1.1em;
+  color: #1b1b1b;
+  height: 250px;
+}
+.all .filter__menu .second__menu__filter__items .filter__pages {
+  display: block;
+  color: #737373;
+  font-size: 13px;
+  line-height: 14px;
+  display: inline;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 1rem;
+}
+.all .filter__menu .second__menu__filter__items .filter__pages__list {
+  padding: 8px 0;
+  display: block;
+}
+.all .filter__menu__dropdown:hover .second__menu__filter {
+  opacity: 1;
+  z-index: 6;
+}
+.all .bottom__text {
+  display: inline-block;
+  color: rgb(55, 55, 55);
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.3s;
+}
+.all .bottom__text:hover {
+  color: black;
+  margin-left: 7px;
+}
+.all .image__size {
+  width: 91%;
+  scale: 100%;
+  transition: 0.3s;
+}
+.all .image__size:hover {
+  scale: 106%;
+}
+.all .p__font__sz {
+  font-size: 13px;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+}
+.all .add {
+  text-decoration: none;
+  color: black;
+  display: none;
+}
+.all .span__font__sz {
+  font-size: 12px;
+  letter-spacing: 0.05rem;
+}
+.all .sold__position {
+  top: 3%;
+  left: 10%;
+  color: white;
+  background-color: rgb(26, 26, 26);
+  padding: 5px 13px;
+  letter-spacing: 1px;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+}
+.all .sale__position {
+  top: 3%;
+  left: 10%;
+  color: black;
+  background-color: white;
+  padding: 5px 13px;
+  letter-spacing: 1px;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+}
+.all .disp__none {
+  float: left;
+  display: none;
+}
+.all .show {
+  display: block;
 }
 @media (max-width: 576px) {
-  .flowers__experts .direct__col {
-    flex-direction: column;
-    align-items: center;
-  }
-  .flowers__experts .resp {
+  .all .div {
     width: 50%;
     flex-direction: column;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  .flowers__experts .resp {
+  .all .div {
     width: 50%;
     flex-direction: column;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  .flowers__experts .resp {
+  .all .div {
     width: 33.33%;
     flex-direction: column;
     margin-top: 1rem;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
-  .flowers__experts .resp {
+  .all .div {
     width: 25%;
     flex-direction: column;
   }
-}/*# sourceMappingURL=flowers__experts.css.map */
+}/*# sourceMappingURL=section_2all.css.map */

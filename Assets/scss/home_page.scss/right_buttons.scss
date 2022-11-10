@@ -138,4 +138,33 @@
       font-weight: 500;
       transition: 0.3s;
     }
+   
   }
+  @media (max-width:576px) {
+    .right__button  {
+      display: none;
+    }
+    .right__button__2 {
+      display: none;
+    }
+    .up__button {
+      display: none;
+    }
+    .chat__button {
+      display: none;
+    }
+}
+@media (min-width:576px) and (max-width:768px) {
+  .right__button  {
+    display: none;
+  }
+  .right__button__2 {
+    display: none;
+  }
+  .up__button {
+    display: none;
+  }
+  .chat__button {
+    display: none;
+  }
+}

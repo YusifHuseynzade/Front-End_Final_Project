@@ -1,4 +1,4 @@
-/*4.SECTION*/
+/*3.SECTION*/
 * {
   margin: 0;
   padding: 0;
@@ -323,42 +323,92 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.flowers__experts .font__size {
+.valentine {
+  background-color: rgb(240, 240, 240);
+}
+.valentine__image {
+  transition: 0.5s;
+  background-size: 105%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.valentine__image:hover {
+  background-size: 112%;
+}
+.valentine__icon__size-color {
+  font-size: 18px;
+  color: red;
+}
+.valentine__font__size {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 38px;
 }
-.flowers__experts__h5__size {
+.valentine .video__button {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  border: none;
+  top: 35%;
+  left: 42%;
+  display: block;
+  transition: 0.3s;
+}
+.valentine .active, .valentine .video__button:hover {
+  cursor: pointer;
+  scale: 105%;
+}
+.valentine .active .iframe__video {
+  display: block;
+}
+.valentine .active .video__button {
+  display: none;
+}
+.valentine .la-play {
+  font-size: 40px;
+}
+.valentine .iframe__video {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.valentine .stop__button {
+  margin-top: 5px;
+  margin-left: 200px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: rgb(220, 72, 72);
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 13px;
+  border: none;
+  padding: 5px 10px;
+  display: none;
+}
+.valentine .active, .valentine .stop__button:hover {
+  cursor: pointer;
+  background-color: rgb(255, 0, 0);
+  scale: 105%;
+}
+.valentine .active .la-undo-alt, .valentine .stop__button:hover .la-undo-alt {
+  transition: 1.2s;
+  rotate: 360deg;
+}
+.valentine .active .stop__button {
+  display: block;
+}
+.valentine .la-undo-alt {
+  transition: 1.2s;
 }
 @media (max-width: 576px) {
-  .flowers__experts .direct__col {
-    flex-direction: column;
-    align-items: center;
+  .valentine .div2 {
+    width: 100%;
+    display: block;
   }
-  .flowers__experts .resp {
-    width: 50%;
-    flex-direction: column;
+  .valentine__font__size {
+    font-size: 18px;
   }
-}
-@media (min-width: 576px) and (max-width: 768px) {
-  .flowers__experts .resp {
-    width: 50%;
-    flex-direction: column;
+  .valentine .p__size {
+    font-size: 12px;
   }
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  .flowers__experts .resp {
-    width: 33.33%;
-    flex-direction: column;
-    margin-top: 1rem;
-  }
-}
-@media (min-width: 992px) and (max-width: 1200px) {
-  .flowers__experts .resp {
-    width: 25%;
-    flex-direction: column;
-  }
-}/*# sourceMappingURL=flowers__experts.css.map */
+}/*# sourceMappingURL=valentine.css.map */
