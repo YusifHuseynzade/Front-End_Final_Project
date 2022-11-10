@@ -1,18 +1,8 @@
 /*5.SECTION*/
-@import "./home_extensions.scss";
-@import "./variables.scss";
-@import "./home_mixin.scss";
+@import "./_home_extensions.scss";
+@import "./_variables.scss";
+@import "./_home_mixin.scss";
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior:smooth;
-  }
-  body {
-    font-size: 16px;
-    font-family: $montserrat;
-  }
 
 .subscribe {
     background-image: url(/Images/home_images/h3-background-img.jpg);

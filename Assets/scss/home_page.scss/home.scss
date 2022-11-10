@@ -1,16 +1,25 @@
-@import "./variables.scss";
-@import "./blog.scss";
-@import "./bottom_slide.scss";
-@import "./flowers__experts.scss";
-@import "./right_buttons.scss";
-@import "./section_2all.scss";
-@import "./subscribe.scss";
-@import "./top_slide.scss";
-@import "./valentine.scss";
-@import "./home_mixin.scss";
-@import "./home_extensions.scss";  
+@import "./_variables.scss";
+@import "./_blog.scss";
+@import "./_bottom_slide.scss";
+@import "./_flowers__experts.scss";
+@import "./_right_buttons.scss";
+@import "./_section_2all.scss";
+@import "./_subscribe.scss";
+@import "./_top_slide.scss";
+@import "./_valentine.scss";
+@import "./_home_mixin.scss";
+@import "./_home_extensions.scss";  
 
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+  }
+  body {
+    font-size: 16px;
+    font-family: $montserrat;
+  }
 
 
 
