@@ -1,0 +1,119 @@
+  /*1.SECTION*/
+  @import "./home_extensions.scss";
+  @import "./variables.scss";
+  @import "./home_mixin.scss";
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+  }
+  body {
+    font-size: 16px;
+    font-family: $montserrat;
+  }
+  
+  .slide__top {
+
+    .font-size {
+      font-size: 21px;
+      font-style: normal;
+    }
+    
+    &__text__absolute {
+      top:16%;
+      left:10%;
+    }
+      
+    .top__slides {
+        display: none;
+    }
+    &__img-size {
+      @include background__repeat__position__size();
+      height: 475px;
+      animation-name: slide-anime-1;
+      animation-duration: 8s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes slide-anime-1 {
+      from {background-size: 100%;}
+      to {background-size: 112%;}
+    }
+    &__img-size-first {
+      @include background__repeat__position__size();
+      height: 475px;
+      animation-name: slide-anime-2;
+      animation-duration: 8s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes slide-anime-2 {
+      from {background-size: 112%;}
+      to {background-size: 100%;}
+    }
+    .slidetext__font__size {
+      font-family: $playfair__display;
+      font-weight: 400;
+      font-size: 38px;
+    }
+    .row {
+    --bs-gutter-x: 0;
+    }
+    &__rowtext {
+    position: absolute;
+    color: #f2f2f2;
+    background-color: rgba(90, 88, 88, 0.7);
+    border-radius: 25%;
+    font-size: 14px;
+    padding: 7px 12px;
+    top: 42%;
+    left: 96%;
+    }
+    &__prev,
+    &__next {
+      text-decoration: none;
+      cursor: pointer;
+      position: absolute;
+      top: 60%;
+      width: auto;
+      padding: 2px;
+      margin-top: -50px;
+      color: #939393;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 10%;
+      user-select: none;
+      -webkit-user-select: none;
+      transition: 0.3s;
+    }
+    &__prev:hover {
+        color: #515151;
+    }
+    &__next:hover {
+        color: #515151;
+    }
+    &__next {
+      right: 0;
+    }
+    &__prev {
+      left: 1%;
+    }
+    
+    p {
+      font-family: Lora,serif;
+      font-style: italic;
+      font-size: 26px;
+      color: #4c4949;
+      line-height: 1.2em;
+    }
+    &__anime {
+        animation-name: anime;
+        animation-duration: 2s;
+    
+    }
+    
+    @keyframes anime {
+        from {opacity: 0.75;} 
+        to {opacity: 1;}
+    }
+    }
