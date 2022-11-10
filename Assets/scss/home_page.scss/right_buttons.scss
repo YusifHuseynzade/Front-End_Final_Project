@@ -1,0 +1,170 @@
+/* RIGHT BUTTONS */
+@import "./home_extensions.scss";
+@import "./variables.scss";
+@import "./home_mixin.scss";
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+  }
+  body {
+    font-size: 16px;
+    font-family: $montserrat;
+  }
+
+.right__button {
+    @include right__buttons();
+    margin-bottom: 45px;
+    bottom: 280px;
+    background-color: rgb(220, 68, 68);
+    width: 115px;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      background-color: $hover__clr__red;
+    }
+      &__icon {
+        position: absolute;
+        text-decoration: none;
+        top: 8px;
+        right: 75px;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+      .text__size {
+        position: absolute;
+        font-size: 10px;
+        color: white;
+        margin-left: 8px;
+        bottom: 8px;
+      }
+  }
+  
+  .right__button__2 {
+    @include right__buttons();
+    margin-bottom: 45px;
+    bottom: 230px;
+    background-color: rgb(205, 205, 205);
+    width: 115px;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(202, 202, 202);
+    }
+      .icon__size {
+        position: absolute;
+        text-decoration: none;
+        color: $hover__clr__red;
+        top: 8px;
+        right: 85px;
+        font-weight: 500;
+        transition: 0.3s;
+        &:hover {
+          color: white;
+        }
+      }
+      .text__size__2 {
+        position: absolute;
+        width: 60px;
+        font-weight: 600;
+        font-size: 10px;
+        color: rgb(45, 45, 45);
+        margin-left: 10px;
+        bottom: 4px;
+      }
+  }
+  
+  .chat__button {
+    @include right__buttons();
+    border-radius: 25px;
+    margin-bottom: 45px;
+    bottom: 0;
+    background-color: rgb(220, 68, 68);
+    width: 98px;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      background-color: $hover__clr__red;
+    }
+      &__icon {
+        position: absolute;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        top: 8px;
+        right: 58px;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+      &__text {
+        position: absolute;
+        font-size: 16px;
+        color: white;
+        bottom: 3px;
+        right: 15px;
+      }
+  }
+  
+  .up__button {
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 45px;
+    bottom: 50px;
+    background-color: rgb(220, 68, 68);
+    height: 40px;
+    font-size: 15px;
+    position: fixed;
+    line-height: 35px;
+    right: 0.5px;
+    text-align: center;
+    z-index: 9;
+    width: 45px;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      background-color: $hover__clr__red;
+    }
+  
+    &__icon {
+      position: absolute;
+      text-decoration: none;
+      font-size: 25px;
+      color: white;
+      top: 8px;
+      right: 10px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+   
+  }
+  @media (max-width:576px) {
+    .right__button  {
+      display: none;
+    }
+    .right__button__2 {
+      display: none;
+    }
+    .up__button {
+      display: none;
+    }
+    .chat__button {
+      display: none;
+    }
+}
+@media (min-width:576px) and (max-width:768px) {
+  .right__button  {
+    display: none;
+  }
+  .right__button__2 {
+    display: none;
+  }
+  .up__button {
+    display: none;
+  }
+  .chat__button {
+    display: none;
+  }
+}

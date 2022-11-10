@@ -1,0 +1,73 @@
+/*5.SECTION*/
+@import "./home_extensions.scss";
+@import "./variables.scss";
+@import "./home_mixin.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+  }
+  body {
+    font-size: 16px;
+    font-family: $montserrat;
+  }
+
+.subscribe {
+    background-image: url(/Images/home_images/h3-background-img.jpg);
+    background-attachment: fixed;
+    @include background__repeat__position__size();
+    background-position-y:-130%;
+    &__padding {
+      padding-top: 185px;
+      padding-bottom: 185px;
+    }
+    .input__group {
+      @include relative__flex();
+      flex-wrap: wrap;
+      align-items: stretch;
+      width: 100%;
+    }
+    .form {
+      width: 35%;
+      padding: 22px 11px;
+      border: none;
+    }
+    .btn-subscribe {
+      width: 12%;
+      border: none;
+      background-color: #f34f3f;
+      transition: 0.3s;
+      &:hover {
+        background-color: $hover__clr__red;
+      }
+    }
+    .h2__font-size {
+      font-family: $playfair__display;
+      font-weight: 400;
+      font-size: 30px;
+    }
+    .messagetrue {
+      top: 30px;
+      left: 400px;
+      padding: 3px 6px;
+      font-family: $playfair__display;
+      font-size: 20px;
+      font-weight: 800;
+      width: 55%;
+      border-radius: 5px;
+      color: rgb(240, 254, 41);
+    }
+    .messagefalse {
+      top: 30px;
+      padding: 3px 6px;
+      left: 380px;
+      font-family: $playfair__display;
+      font-size: 20px;
+      font-weight: 800;
+      width: 62%;
+      border-radius: 5px;
+      color: rgb(214, 0, 0);
+    }
+  }
