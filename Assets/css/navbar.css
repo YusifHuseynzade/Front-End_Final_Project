@@ -113,6 +113,21 @@ body {
   padding: 8px 0;
   display: block;
 }
+.navbar .right__side__items {
+  display: block;
+  width: 210px;
+  height: auto;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.h1 {
+  color: #0e0e0e;
+  font-size: 50px;
+  line-height: 1.32em;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
 
 .navbar__menu__dropdown:hover .second__menu {
   opacity: 1;
@@ -140,4 +155,12 @@ body {
 
 .bottom__line:hover::after {
   width: 100%;
+}
+
+.font__size {
+  font-size: 10px !important;
+}
+
+#search__input {
+  display: none;
 }/*# sourceMappingURL=navbar.css.map */
