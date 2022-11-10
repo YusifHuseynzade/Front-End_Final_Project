@@ -9,7 +9,9 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior:smooth;
-  }
+}
+
+
   body {
     font-size: 16px;
     font-family: $montserrat;
@@ -23,8 +25,10 @@
     &__list__type__none {
       list-style-type: none;
     }
-    &__text__decor {
-      text-decoration: none;
+    &__button__decor {
+      border: none;
+      background-color: white;
+      cursor: pointer;
       font-family: $montserrat;
       font-size: 14px;
       transition: 0.3s;
@@ -121,7 +125,7 @@
       }
       .filter__menu__dropdown:hover .second__menu__filter{
         opacity: 1;
-        z-index: 9;
+        z-index: 6;
       }
       .bottom__text {
         display: inline-block;
@@ -175,6 +179,13 @@
         letter-spacing: 1px;
         font-family: $playfair__display;
         font-size: 16px;
+      }
+      .disp__none {
+        float: left;
+        display: none;
+      }
+      .show {
+        display: block;
       }
       @media (max-width:576px) {
         

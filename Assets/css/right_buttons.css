@@ -1,4 +1,4 @@
-/*4.SECTION*/
+/* RIGHT BUTTONS */
 * {
   margin: 0;
   padding: 0;
@@ -323,42 +323,176 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.flowers__experts .font__size {
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
-  font-size: 38px;
+.right__button {
+  position: relative;
+  height: 42px;
+  font-size: 15px;
+  position: fixed;
+  line-height: 35px;
+  right: 0.5px;
+  text-align: center;
+  z-index: 9;
+  margin-bottom: 45px;
+  bottom: 280px;
+  background-color: rgb(220, 68, 68);
+  width: 115px;
+  transition: 0.3s;
+  cursor: pointer;
 }
-.flowers__experts__h5__size {
-  font-family: "Montserrat", sans-serif;
+.right__button:hover {
+  background-color: #e92e1d;
+}
+.right__button__icon {
+  position: absolute;
+  text-decoration: none;
+  top: 8px;
+  right: 75px;
   font-weight: 500;
-  font-size: 13px;
+  transition: 0.3s;
 }
+.right__button .text__size {
+  position: absolute;
+  font-size: 10px;
+  color: white;
+  margin-left: 8px;
+  bottom: 8px;
+}
+
+.right__button__2 {
+  position: relative;
+  height: 42px;
+  font-size: 15px;
+  position: fixed;
+  line-height: 35px;
+  right: 0.5px;
+  text-align: center;
+  z-index: 9;
+  margin-bottom: 45px;
+  bottom: 230px;
+  background-color: rgb(205, 205, 205);
+  width: 115px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.right__button__2:hover {
+  background-color: rgb(202, 202, 202);
+}
+.right__button__2 .icon__size {
+  position: absolute;
+  text-decoration: none;
+  color: #e92e1d;
+  top: 8px;
+  right: 85px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.right__button__2 .icon__size:hover {
+  color: white;
+}
+.right__button__2 .text__size__2 {
+  position: absolute;
+  width: 60px;
+  font-weight: 600;
+  font-size: 10px;
+  color: rgb(45, 45, 45);
+  margin-left: 10px;
+  bottom: 4px;
+}
+
+.chat__button {
+  position: relative;
+  height: 42px;
+  font-size: 15px;
+  position: fixed;
+  line-height: 35px;
+  right: 0.5px;
+  text-align: center;
+  z-index: 9;
+  border-radius: 25px;
+  margin-bottom: 45px;
+  bottom: 0;
+  background-color: rgb(220, 68, 68);
+  width: 98px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.chat__button:hover {
+  background-color: #e92e1d;
+}
+.chat__button__icon {
+  position: absolute;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  top: 8px;
+  right: 58px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.chat__button__text {
+  position: absolute;
+  font-size: 16px;
+  color: white;
+  bottom: 3px;
+  right: 15px;
+}
+
+.up__button {
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 45px;
+  bottom: 50px;
+  background-color: rgb(220, 68, 68);
+  height: 40px;
+  font-size: 15px;
+  position: fixed;
+  line-height: 35px;
+  right: 0.5px;
+  text-align: center;
+  z-index: 9;
+  width: 45px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.up__button:hover {
+  background-color: #e92e1d;
+}
+.up__button__icon {
+  position: absolute;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  top: 8px;
+  right: 10px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
 @media (max-width: 576px) {
-  .flowers__experts .direct__col {
-    flex-direction: column;
-    align-items: center;
+  .right__button {
+    display: none;
   }
-  .flowers__experts .resp {
-    width: 50%;
-    flex-direction: column;
+  .right__button__2 {
+    display: none;
+  }
+  .up__button {
+    display: none;
+  }
+  .chat__button {
+    display: none;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  .flowers__experts .resp {
-    width: 50%;
-    flex-direction: column;
+  .right__button {
+    display: none;
   }
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  .flowers__experts .resp {
-    width: 33.33%;
-    flex-direction: column;
-    margin-top: 1rem;
+  .right__button__2 {
+    display: none;
   }
-}
-@media (min-width: 992px) and (max-width: 1200px) {
-  .flowers__experts .resp {
-    width: 25%;
-    flex-direction: column;
+  .up__button {
+    display: none;
   }
-}/*# sourceMappingURL=flowers__experts.css.map */
+  .chat__button {
+    display: none;
+  }
+}/*# sourceMappingURL=right_buttons.css.map */
