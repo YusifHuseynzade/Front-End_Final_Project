@@ -5,6 +5,18 @@
 @import './_portfolio.scss';
 @import './_navbar.scss';
 @import './_shop__products__standard.scss';
+@import "./_variables.scss";
+@import "./_blog.scss";
+@import "./_bottom_slide.scss";
+@import "./_flowers__experts.scss";
+@import "./_right_buttons.scss";
+@import "./_section_2all.scss";
+@import "./_subscribe.scss";
+@import "./_top_slide.scss";
+@import "./_valentine.scss";
+@import "./_home_mixin.scss";
+@import "./_accordion.scss";
+
 
 * {
     margin: 0;
@@ -15,6 +27,5 @@
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
   }
-  
 
   

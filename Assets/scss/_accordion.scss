@@ -1,4 +1,4 @@
-@import "./_acc_extensions";
+@import "./_extensions";
 @import "./_variables.scss";
 @import "./_acc_mixin.scss";
 
@@ -93,7 +93,6 @@
       .padding__top {
         padding-top: 150px;
       }
-
       .accordion-content__2 {
         position: relative;
         border: none;
