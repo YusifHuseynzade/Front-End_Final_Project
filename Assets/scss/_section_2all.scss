@@ -24,8 +24,12 @@
       }
     }
       .filter__menu {
+        &:hover {
+          .filter__icon {
+          rotate: 180deg;
+          }
+        }
         .second__menu {
-         
           opacity: 0;
           overflow: auto;
           top: 100%;
@@ -66,11 +70,8 @@
           }
         }
         .filter__icon {
-          transition: 0.3s;
+          transition: 0.4s;
           color: black;
-          &:hover {
-            rotate: 180deg;
-          }
         }
         .second__menu__filter{
           background-color: white;
@@ -138,11 +139,7 @@
         letter-spacing: 0.05rem;
         cursor: pointer;
       }
-      .add {
-        text-decoration: none;
-        color: black;
-        display: none;
-      }
+
       .span__font__sz {
         font-size: 12px;
         letter-spacing: 0.05rem;
@@ -184,6 +181,22 @@
           display: none;
         }
       }
+      .add-to-cart {
+        padding: 12.5px 25px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        background-color: rgb(189, 40, 40);
+        transition: 0.3s;
+        &:hover {
+          background-color: $hover__clr__red;
+          scale: 110%;
+        }
+        &:active {
+          background-color:rgb(18, 137, 24)
+        }
+      }
+      
       @media (min-width:576px) and (max-width:768px)  {
         .resp {
           width: 50%;
