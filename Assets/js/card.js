@@ -1,5 +1,5 @@
 (function() {
-    // VARS
+
     const productsContainer = document.querySelector("#grid");
     const cartContainer = document.querySelector("#shopping-cart");
     const cartContent = document.querySelector("#cart-content");
@@ -8,42 +8,38 @@
     const checkoutBtn = document.querySelector("#checkout-btn");
     const totalPriceContainer = document.querySelector("#total-price");
   
-    // FUNCTIONS
+    // İstifadə olunan funksiyalar
   
     function toggleCart() {
-      // toggle shopping cart visibility
+    // Səbətdəki keçidləri təyin etmək 
       cartContainer.classList.toggle("open");
     }
   
     function getLSContent() {
-      // get contents from local storage.
-      // if nothing is there, create an empty array
+      // Local yaddaşdan məlumat əldə etmək
+      // Əgər yoxdursa, yeni bir boş array yaratmaq 
       const lsContent = JSON.parse(localStorage.getItem("products")) || [];
       return lsContent;
     }
   
     function setLSContent(lsContent) {
-      // save content inside local storage
+      // Məlumatları local yaddaşda saxlamaq
       localStorage.setItem("products", JSON.stringify(lsContent));
     }
   
     function calculateTotal(prices) {
-      // calculate the total price in the cart
+      // Səbətə əlavə olunacaq məhsulların toplam dəyərini hesablamaq
       return prices.reduce(function(prev, next) {
         return prev + next;
       }, 0);
     }
   
     function getCartItemPrices() {
-      // extract the price numbers from the cart items to calculate total
+      // Cəmi hesablamaq üçün səbətdəki əşyalardan qiymətlərini çıxarmaq
       const prices = [];
-      // retrieve the td element in the cart where the product price is stored
-      // for each product in the cart
+
       let nums = cartContent.querySelectorAll("tr td:nth-child(3)");
   
-      // iterate over each td node and extract the price
-      // strip the $ sign from the text, turn the string into
-      // a number and push the number into the prices array
       if (nums.length > 0) {
         for (let cell = 0; cell < nums.length; cell++) {
           let num = nums[cell].innerText;
@@ -51,7 +47,6 @@
           num = parseFloat(num);
           prices.push(num);
         }
-        // return the prices array
         return prices;
       } else {
         return;
@@ -59,7 +54,7 @@
     }
   
     function displayCartTotal() {
-      // display the total cost in the cart
+      // Səbətə əlavə olunan bütün məhsulların toplam dəyərini göstərmək
       const prices = getCartItemPrices();
       let total = 0;
       if (prices) {
@@ -73,13 +68,12 @@
     }
   
     function displayProducts() {
-      // display all products in the cart
+      // Səbətdə bütün məhsulların məlumatlarını detaylı şəkildə göstərmək
   
-      // get contents from local storage
+      // Yerli yaddaşdan məlumatları əldə etmək
       const lsContent = getLSContent();
       let productMarkup = "";
-      // if local storage is not empty, build the
-      // cart items markup and the appropriate details
+      // Karta əlavə olunacaq məhsulların məlumatlarını yaratmaq
       if (lsContent !== null) {
         for (let product of lsContent) {
           productMarkup += `
@@ -96,15 +90,15 @@
           `;
         }
       } else {
-        // if no content is in local storage, alert user
+        // Yerli yaddaşda heç bir məzmun yoxdursa, istifadəçiyə bununla bağlı xəbərdarlıq vermek.
         productMarkup = "Your cart is empty.";
       }
-      // add markup to DOM
+      // DOM-a işarələmə əlavə etmək
       cartContent.querySelector("tbody").innerHTML = productMarkup;
     }
   
     function saveProduct(clickedBtn) {
-      // save selected product in local storage and display it in the cart together
+      // Seçilmiş məhsulu yaddaşda saxlamaq və bununla birlikdə səbətdə göstərmək
   
       
       const productId = clickedBtn.getAttribute("data-id");
@@ -116,16 +110,13 @@
   
       let isProductInCart = false;
   
-      // get local storage array
       const lsContent = getLSContent();
   
-      // to avoid user adds the same course twice, check
-      // the product is not in LS already before adding it
+     
       
   
-      // only if the product is not already in the cart,
-      // create an object representing selected product info
-      // and push it into local storage array
+      // Səbətə məhsul əlavə etmək üçün seçilmiş məhsul məlumatını təmsil edən obyekt yaratmaq, və onu yerli yaddaş array-ə daxil etmək.
+      
       if (!isProductInCart) {
         lsContent.push({
           id: productId,
@@ -134,21 +125,20 @@
           price: prodPrice
         });
   
-        // add product into into local storage
+        
         setLSContent(lsContent);
-        // update the display of courses in the shopping cart
+        
         displayProducts();
       }
     }
   
     function removeProduct(productId) {
-      // remove product from cart (and from local storage)
+      // Məhsulu local yaddaşdan və array-dən çıxarmaq. 
   
-      // retrieve list of products from LS
+      // Local yaddaşdan məhsulların sihayisini əldə etmək
       const lsContent = getLSContent();
   
-      // get the index of the product item to remove
-      // inside the local storage content array
+      // Məhsulu silmək üçün indeksini əldə etmək
       let productIndex;
       lsContent.forEach(function(product, i) {
         if (product.id === productId) {
@@ -156,32 +146,30 @@
         }
       });
   
-      // modify the items in local storage array
-      // to remove the selected product item
+      // Local yaddaş Array-indəki məhsullarda dəyişiklik etmək və seçilmiş mıhsulu silmək
   
       lsContent.splice(productIndex, 1);
-      // update local storage content
+      // Local yaddaşı yeniləmək
       setLSContent(lsContent);
   
       displayProducts();
     }
   
     function clearCart() {
-      // clear all products from cart (and local storage)
+      // Səbətdəki bütün məhsulları silmək 
   
-      // retrieve list of products from LS
+      // Local yaddaşdan məhsul məlumatlarını əldə etmək
       const lsContent = getLSContent();
-      // empty array in local storage
+      // Local yaddaşda boş array
       lsContent.splice(0, lsContent.length);
-      // update local storage
+      // Local yaddaşı yeniləmək
       setLSContent(lsContent);
-      // display cart content again
+      // səbətdəki məzmunu yenidən göstərmək
       displayProducts();
     }
   
     function checkout() {
-      // checkout: just clear the cart
-      // after user confirms the checkout process
+      // İstifadəçi yoxlama prosesini təsdiq etdikdən sonra və sadəcə səbəti təmizləmək
       const cartProducts = cartContent.querySelector("tbody").innerHTML;
       if (cartProducts !== "" && confirm("Are you sure you want to checkout?")) {
         clearCart();
@@ -190,25 +178,24 @@
       }
     }
   
-    // BIND EVENTS AND CALL FUNCTIONS
   
-    // Page load:
+  
+    // Səhifənin yüklənməsi
     document.addEventListener("DOMContentLoaded", function(e) {
-      // display list of products in cart, if any, on page load
+      // Səbətdəki məhsulların siyahısını, əgər varsa, səhifə yüklənməsində göstərin
       displayProducts();
-      // display cart total
       displayCartTotal();
     });
   
-    // open and close shopping cart
-    // when cart button is clicked
+    // Alış-veriş səbətini açmaq və bağlamaq
+    // Səbətə kliklədikdə
     toggleCartBtn.addEventListener("click", function(e) {
       e.preventDefault();
       toggleCart();
     });
   
-    // Save product in cart and Local Storage
-    // when add to cart button is clicked
+    // Məhsulu səbətdə və Local yaddaşda saxlayın
+    // Səbətə kliklədikdə
     productsContainer.addEventListener("click", function(e) {
       if (e.target.classList.contains("add-to-cart")) {
         e.preventDefault();
@@ -223,37 +210,32 @@
       }
     });
   
-    // bind removeProduct to click event of the cartContent table
+    // cartContent tablosunun click-nə removeProduct-ı bağlamaq
     cartContent.querySelector("tbody").addEventListener("click", function(e) {
       e.preventDefault();
-      // identify the button that was clicked
+    // klik etdiyimiz düymə üçün hədəf teyin etmək
       const clickedBtn = e.target;
-      // if it's a remove button
+      // Əgər silmə düyməsidirsə,
       if (e.target.classList.contains("remove")) {
-        // get the value of the data-id property, which contains the
-        // id of the selected product
+        // data-id dəyərini əldə etmək
         const productId = clickedBtn.getAttribute("data-id");
-        // use the id to remove the selected product
+        // məhsulu silmək üçün id-sindən istifadə etmək
         removeProduct(productId);
-        // display products in the cart again,
-        // now the list should be displayed with 1 less product
-        // or empty if no products are left in the cart
-  
-        // adjust the total
+        // Bu zaman siyahıdan bir məhsul silmək və yənidən səbətdəki məlumatları göstərmək yoxdursa boş bir səbət qaytaracaq.
+
+
         displayCartTotal();
       }
     });
   
-    // bind the button to clear the cart both to the function that
-    // clears the cart and to the function that adjusts the total price
+   
     clearCartBtn.addEventListener("click", function(e) {
       e.preventDefault();
       clearCart();
     });
     clearCartBtn.addEventListener("click", displayCartTotal);
   
-    // bind the button that does the checkout both to the function that
-    // controls the checkout and and to the function that adjusts the total price
+
     checkoutBtn.addEventListener("click", function(e) {
       e.preventDefault();
       checkout();

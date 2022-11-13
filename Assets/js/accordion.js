@@ -1,3 +1,4 @@
+// Accordion 1
 { let accordion = document.getElementsByClassName("accordion-content");
 let i;
 
@@ -19,6 +20,7 @@ for (i = 0; i < accordion.length; i++) {
 }
 }
 
+// Accordion 2
 { let accordion = document.getElementsByClassName("accordion-content__2");
 let i;
 

@@ -1,3 +1,4 @@
+// Top slide
 {
 let slideIndex = 1;
 slideShow(slideIndex);
@@ -30,7 +31,7 @@ function slideShow(n) {
 };
 }
 
-
+// Bottom slide
 {
 let slideIndex = 1;
 slideShow(slideIndex);
@@ -63,7 +64,7 @@ function slideShow(n) {
 }
 }
 
-
+// Video
 {
 let iframe = document.querySelector(".iframe__video");
 let stopButton = document.querySelector(".stop__button");
@@ -82,7 +83,7 @@ function stopVideo() {
 }
 }
 
-
+// Subscribe button
 {
 let addButton = document.getElementById('button-add');
 let input = document.querySelector('.form');
@@ -110,7 +111,7 @@ addButton.addEventListener('click' , () => {
 }
 )}
 
-
+// Şəkilləri kateqoriyalarına görə filterləmək
 filterSelection("all")
 function filterSelection(c) {
     let x, i;
